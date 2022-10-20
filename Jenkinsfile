@@ -1,10 +1,10 @@
 @Library('shared-library') _
 pipeline {
-    agent { label 'java' }
+    agent any
     stages {
         stage('verify') {
             steps {
-                helloWorld(name: 'fred')
+                helloWorld(name: 'elseñordelpaquete')
             }
         }
     }
